@@ -24,10 +24,6 @@
         var url = unescape(location.href)
         var text = url.split('?')[1].split("=")[1]
         Ctext.value = text.replace(/\\n/g, "\n")
-        window.navigator.clipboard.writeText(Ctext.value).then(() => {
-        // 복사가 완료되면 호출된다.
-        alert("복사완료");
-    });
     </script>
 </body>
 </html>
