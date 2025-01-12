@@ -10,21 +10,20 @@
             zoom: 10%;
         }
         textarea{
+            position: absolute;
             width: 3000px;
             height: 3000px;
         }
     </style>
 </head>
 <body>
-    <textarea></textarea>
+    <textarea id="textu"></textarea>
 
     <script>
-        console.log("하핫")
-        window.onload = function(){
-            var url = unescape(location.href)
-            var pm = url.split('?').split('=');
-            console.log(pm)
-        }
+        const Ctext = document.querySelector("#textu")
+        var url = unescape(location.href)
+        var text = url.split('?')[1].split("=")[1]
+        Ctext.value = text
     </script>
 </body>
 </html>
